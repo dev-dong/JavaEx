@@ -9,9 +9,9 @@ public class MapExample {
         HashMap<String, String> emails = new HashMap<String, String>();
 
         /* 2. 데이터를 저장하세요 */
-        emails.put("나리", "nari@cloudstudying.kr");
-        emails.put("정애", "jungae@cloudstudying.kr");
-        emails.put("홍팍", "sehong@cloudstudying.kr");
+        emails.put("나리", "nari@naver.com");
+        emails.put("정애", "jungae@naver.com");
+        emails.put("홍팍", "sehong@naver.com");
 
         /* 3. 해시맵의 크기를 출력하세요. */
         System.out.printf("emails.size() -> %d\n", emails.size());

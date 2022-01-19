@@ -28,6 +28,6 @@ class Cylinder {
     public double getArea() {
         double num = this.radius * this.radius * Math.PI;
         double num1 = this.radius * this.height * Math.PI * 2;
-        return (num1 * 2) + num;
+        return 2 * num + num1;
     }
 }
