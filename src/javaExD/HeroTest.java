@@ -8,7 +8,6 @@ public class HeroTest {
 
         // 격투 시작
         Hero.battle(arthas, leona);
-
     }
 }
 
@@ -26,20 +25,20 @@ class Hero {
     // 메소드(인스턴스 메소드)
     public void punch(Hero enemy) {
         /* 1. 해당 메소드를 완성하세요. */
-        int aHp = 30;
-        int lHp = 30;
-        System.out.printf("[%s]의 펀치\n", enemy.name);
-        this.hp -= 10;
-        System.out.printf("    %s: %d/%d\n", this.name, this.hp, aHp);
+        System.out.printf("[%s]의 펀치\n", name);
+        enemy.hp -= 10;
+        System.out.printf("\t%s: %d/30\n", enemy.name, enemy.hp);
     }
 
     // 메소드(클래스 메소드)
     public static void battle(Hero a, Hero b) {
         /* 2. 해당 메소드를 완성하시오. */
-        a.punch(b);
-        b.punch(a);
-        a.punch(b);
-        b.punch(a);
-        b.punch(a);
+        while((a.hp > 0) && (b.hp > 0)) {
+            if(Math.random() > 0.5) {
+                a.punch(b);
+            }else {
+                b.punch(a);
+            }
+        }
     }
 }
