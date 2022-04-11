@@ -4,9 +4,9 @@ import java.math.BigDecimal;
 
 public class StudentRunner {
     public static void main(String[] args) {
-        int[] marks = {99, 98, 72};
 
-        Student student = new Student("Ranga", marks);
+        Student student = new Student("Ranga", 97, 98, 100);
+        Student student1 = new Student("Adam", 97, 98);
 
         int number = student.getNumberOfMarks();
         int sum = student.getTotalSumOfMarks();
